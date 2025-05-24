@@ -1,6 +1,6 @@
-To run this collection locally, Newman needs to be installed first, and then to generate the HTML report, we need to install the Newman reporter.
+#To run this collection locally, Newman needs to be installed first, and then to generate the HTML report, we need to install the Newman reporter.
 
-Newman: It's a command-line tool created by Postman, which allows you to run and test collections from the command line
+#Newman: It's a command-line tool created by Postman, which allows you to run and test collections from the command line
 
 Install Newman: **npm install -g newman** 
 Install Newman reporter: **npm install -g newman-reporter-html**
