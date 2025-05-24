@@ -1,7 +1,9 @@
 Install Newman: **npm install -g newman** 
 Install Newman reporter: **npm install -g newman-reporter-html**
 
-=>Run this before running the collection with your IP address and port: **set BASEURL=http://your_IP:your_Port/opencart/upload/index.php?route=**
+=>Run this before running the collection with your IP address and port:
+
+**set BASEURL=http://your_IP:your_Port/opencart/upload/index.php?route=**
 
 => Now, to **run** the collection **locally** on your system, run this command: 
 
