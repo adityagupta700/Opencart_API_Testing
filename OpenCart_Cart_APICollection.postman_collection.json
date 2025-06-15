@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "ca5bb767-efc6-407c-b84c-684e971d81fc",
 		"name": "OpenCart_Cart_APICollection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "34318736"
 	},
 	"item": [
@@ -45,21 +45,13 @@
 						},
 						{
 							"key": "key",
-							"value": "jK6KS6lQcH7D6QiCaODJFVVPWrlcacEHAt7UQcyrnZiEth1dQuUeCsMMiVdjbSa85Bt8ItublFnLX7KriXez3ujJdTrMZdEOrYf8KoCVV1iKnoy3GUPRNbeGklGcKTg7MszfkCb2gXzvzy3XcZ7RhiNHK4GzXp5TobTqtcOecY7WNvvwqYc4GUVTQRIQcY0amTJR0fdjf5fSMhJeOHtWEQyK62nQL16hY7fXLnlqbPmR4mqpdh0WZ4W5mhV8EFbB",
+							"value": "LDTjGiIbujL1SxQ5omdHNB6Drocor5XYWiCWxSWjxZJbWSLS3BvBBYByq6KT2oM5br4DbxwdMgHpFg0eXO3zsdBrwqrPUquBri32EBqsL81jN4CM2KlKQiODjE5I20xfrPwcatAplbXklrGHKuNHebyGYuyq3lf8UXtVDRNTUjyaNORCMyZpVHXl0KAXsDTcswl7saf7dPqFiPiOFA3hYyBuCd0G4gaMKM0jyM7NXdQeKGBIF1X1fItQtcd5BqQ6",
 							"description": "Got this from Opencart API user account",
 							"type": "text"
 						}
 					]
 				},
-				"url": {
-					"raw": "{{baseUrl}}api/login",
-					"host": [
-						"{{baseUrl}}api"
-					],
-					"path": [
-						"login"
-					]
-				}
+				"url": "{{baseUrl}}api/login"
 			},
 			"response": []
 		},
@@ -97,23 +89,11 @@
 			"request": {
 				"auth": {
 					"type": "apikey",
-					"apikey": [
-						{
-							"key": "key",
-							"value": "api_token",
-							"type": "string"
-						},
-						{
-							"key": "value",
-							"value": "{{apiToken}}",
-							"type": "string"
-						},
-						{
-							"key": "in",
-							"value": "query",
-							"type": "string"
-						}
-					]
+					"apikey": {
+						"key": "api_token",
+						"value": "{{apiToken}}",
+						"in": "query"
+					}
 				},
 				"method": "POST",
 				"header": [],
@@ -132,16 +112,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "{{baseUrl}}api/cart/add",
-					"host": [
-						"{{baseUrl}}api"
-					],
-					"path": [
-						"cart",
-						"add"
-					]
-				}
+				"url": "{{baseUrl}}api/cart/add"
 			},
 			"response": []
 		},
@@ -170,23 +141,11 @@
 			"request": {
 				"auth": {
 					"type": "apikey",
-					"apikey": [
-						{
-							"key": "key",
-							"value": "api_token",
-							"type": "string"
-						},
-						{
-							"key": "value",
-							"value": "{{apiToken}}",
-							"type": "string"
-						},
-						{
-							"key": "in",
-							"value": "query",
-							"type": "string"
-						}
-					]
+					"apikey": {
+						"key": "api_token",
+						"value": "{{apiToken}}",
+						"in": "query"
+					}
 				},
 				"method": "GET",
 				"header": [],
@@ -194,16 +153,7 @@
 					"mode": "formdata",
 					"formdata": []
 				},
-				"url": {
-					"raw": "{{baseUrl}}api/cart/products",
-					"host": [
-						"{{baseUrl}}api"
-					],
-					"path": [
-						"cart",
-						"products"
-					]
-				}
+				"url": "{{baseUrl}}api/cart/products"
 			},
 			"response": []
 		},
@@ -241,23 +191,11 @@
 			"request": {
 				"auth": {
 					"type": "apikey",
-					"apikey": [
-						{
-							"key": "key",
-							"value": "api_token",
-							"type": "string"
-						},
-						{
-							"key": "value",
-							"value": "{{apiToken}}",
-							"type": "string"
-						},
-						{
-							"key": "in",
-							"value": "query",
-							"type": "string"
-						}
-					]
+					"apikey": {
+						"key": "api_token",
+						"value": "{{apiToken}}",
+						"in": "query"
+					}
 				},
 				"method": "POST",
 				"header": [],
@@ -276,16 +214,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "{{baseUrl}}api/cart/edit",
-					"host": [
-						"{{baseUrl}}api"
-					],
-					"path": [
-						"cart",
-						"edit"
-					]
-				}
+				"url": "{{baseUrl}}api/cart/edit"
 			},
 			"response": []
 		},
@@ -318,23 +247,11 @@
 			"request": {
 				"auth": {
 					"type": "apikey",
-					"apikey": [
-						{
-							"key": "key",
-							"value": "api_token",
-							"type": "string"
-						},
-						{
-							"key": "value",
-							"value": "{{apiToken}}",
-							"type": "string"
-						},
-						{
-							"key": "in",
-							"value": "query",
-							"type": "string"
-						}
-					]
+					"apikey": {
+						"key": "api_token",
+						"value": "{{apiToken}}",
+						"in": "query"
+					}
 				},
 				"method": "POST",
 				"header": [],
@@ -348,16 +265,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "{{baseUrl}}api/cart/remove",
-					"host": [
-						"{{baseUrl}}api"
-					],
-					"path": [
-						"cart",
-						"remove"
-					]
-				}
+				"url": "{{baseUrl}}api/cart/remove"
 			},
 			"response": []
 		}
