@@ -9,22 +9,24 @@
 ## To run the collection in Postman
 Just **import** the collection in Postman and run the collection in a single go.
 
-## To run the collection on the local system:
-Before installing anything, ensure that Node and npm are installed on the local system. In addition to that, the OpenCart application should be present on the local system, and to run that application XAMPP tool needs to be downloaded and configured.
+## To run the collection on the local system
+---
 
-- Link to download the **OpenCart Application**: https://www.opencart.com/index.php?route=cms/download/download&download_id=64
-- Link to download **XAMPP**: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.4.29/
+### Prerequisites:
+- Node and npm
+- XAMPP and OpenCart Admin Application, *follow instructions from timestamp in this video: [53:00](https://www.youtube.com/watch?v=5zfgqqPr8o8&t=3180s)*
 
-To run the collection on the local system and generate reports, these two packages need to be installed:
-## Install Newman:
+#### Install Newman:
+To run the collection
 ```
 npm install -g newman
 ```
-## Install Newman reporter: 
+#### Install Newman reporter: 
+To run the collection and generate Newman HTML reports
 ```
 npm install -g newman-reporter-html
 ```
-## Run this before running the collection with your IP address and port:
+#### Run this before running the collection with your IP address and port:
 ```
 set BASEURL=http://your_IP:your_Port/opencart/upload/index.php?route=
 ```
