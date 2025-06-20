@@ -1,41 +1,46 @@
-# OpenCart_API_Testing
+# OpenCart API Testing
 
-- This is an API collection, including test validations for the OpenCart Web Application APIs related to cart functionality, and it includes APIs for different Cart functionalities (Add product, Edit Cart, Delete Product from Cart). This collection was created using the Postman tool. 
-  
-- Test validations are added in the test tab of the Postman tool itself, which utilizes the Chai.js library for testing. All APIs are chained using variables defined at either the Environment level or on the collection level in the tool.
+This project contains a Postman collection that tests key API endpoints for the OpenCart Web Application’s **Cart** functionality — including:
 
-# Usage
+- Add Product to Cart
+- Edit Cart
+- Delete Product from Cart
 
-## To run the collection in Postman
-Just **import** the collection in Postman and run the collection in a single go.
+Tests are implemented directly in Postman’s **Test tab**, using the `Chai.js` assertion library. API requests are chained using variables defined at the **Environment** or **Collection** level.
 
-## To run the collection on the local system
 ---
-
-### Prerequisites:
+## 🧰 Prerequisites
 - Node and npm
-- XAMPP and OpenCart Admin Application, *follow instructions from timestamp in this video: [53:00](https://www.youtube.com/watch?v=5zfgqqPr8o8&t=3180s)*
+- XAMPP and OpenCart Admin Application, *follow instructions from timestamp in this video: [53:00 in this video](https://www.youtube.com/watch?v=5zfgqqPr8o8&t=3180s)*
+### 🔧 Install Newman & Reporter
 
-#### Install Newman:
-To run the collection
-```
+```bash
 npm install -g newman
-```
-#### Install Newman reporter: 
-To run the collection and generate Newman HTML reports
-```
 npm install -g newman-reporter-html
 ```
-#### Run this before running the collection with your IP address and port:
-```
-set BASEURL=http://your_IP:your_Port/opencart/upload/index.php?route=
-```
-=> Now, to **run** the collection **locally** on your system, replace <<collection-name.json>> with name of the collection and run this command: 
-```
-newman run <<collection-name.json>> --env-var "baseUrl=%BASEURL%"
-```
-=> To generate **HTML reports**, again replace <<collection-name.json>> with name of the collection and run this command:
-```
-newman run <<collection-name.json>> -r html --env-var "baseUrl=%BASEURL%"
-```
-Comment: BaseUrl was an env variable in Postman itself, so we need to set this variable separately when we have to run the collection.
+---
+
+## Usage
+
+### 1. Run in Postman
+Simply import the collection into Postman and click **Run**.
+
+### 2. Run via Newman (CLI)
+
+- Step 1: Replace `your_IP` and `your_Port` accordingly:
+  ```
+  set BASEURL=http://your_IP:your_Port/opencart/upload/index.php?route=
+  ```
+- Step 2: Run the collection 
+  ```
+  newman run <collection-name.json> --env-var "baseUrl=%BASEURL%"
+  ```
+- Step 3: Generate HTML reports
+  ```
+  newman run <collection-name.json> -r html --env-var "baseUrl=%BASEURL%"
+  ```
+💡 Note: *`baseUrl`* is an environment variable in Postman. When running collections via Newman, you must manually define it as shown above.
+
+## 📌 Notes: 
+- Make sure OpenCart is properly set up and running locally before executing API tests.
+- Variables like baseUrl should match your local server setup (e.g., localhost or your IP).
